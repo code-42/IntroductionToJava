@@ -6,6 +6,8 @@ Assignment: Describe an OOP Concept
 
 January 9, 2018
 
+![OOP Concept Assignment](../resources/OOPConceptAssignment.png "OOPConceptAssignment.png")
+
 For this assignment, I chose to describe Polymorphism because it’s not easy to explain.  Also, I like the way the Lego video explained it in Section 4 Lecture 9.  
 
 Basically, polymorphism allows the program to do one thing if you get one type of object, and do a different thing for a different type of object.
@@ -25,4 +27,3 @@ These are the two lines that shows it works:
 
 
 
-![OOP Concept Assignment](../resources/OOPConceptAssignment.png "OOPConceptAssignment.png")
