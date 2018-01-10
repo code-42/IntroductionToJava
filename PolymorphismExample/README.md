@@ -12,7 +12,7 @@ Basically, polymorphism allows the program to do one thing if you get one type o
 
 In the video, he showed method overloading, by passing an int in one call to the Count() method and passing a float in the next example.  
 
-I wrote this little java program to show this concept.  It at my github repo here → https://github.com/code-42/IntroductionToJava/tree/OOP_Concept_Assignment/PolymorphismExample 
+I wrote this little java program to show the Polymorphism concept with method overriding instead of overloading.  It at my github repo here → https://github.com/code-42/IntroductionToJava/tree/OOP_Concept_Assignment/PolymorphismExample 
 
 As I demonstrate in my Polymorphism Example program, I changed the behavior of the abstract MakeSound() method in the superclass, by implementing the MakeSound() method in the dog and cat subclasses. 
 
