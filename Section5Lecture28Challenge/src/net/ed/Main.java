@@ -23,10 +23,31 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String player;
+        int position;
+        int playerScore;
+
+        displayHighScorePosition("Brady", calculateHighScorePosition(1500));
+        displayHighScorePosition("Gronk", calculateHighScorePosition(900));
+        displayHighScorePosition("Lewis", calculateHighScorePosition(400));
+        displayHighScorePosition("Burk", calculateHighScorePosition(50));
+
     }
 
     public static void displayHighScorePosition(String player, int position) {
-            System.out.println(player + "High Score" + position);
-
+        System.out.println(player + " is in position " + position + " on the high score table");
     }
+
+    public static int calculateHighScorePosition(int playerScore) {
+        if(playerScore >= 1000) {
+            return 1;
+        } else if(playerScore >= 500) {
+            return 2;
+        } else if(playerScore >= 100) {
+            return 3;
+        } else {
+            return 4;
+        }
+    }
+
 }
