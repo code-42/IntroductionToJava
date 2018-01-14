@@ -1,6 +1,7 @@
 package net.ed;
 
 /**
+ * Section 8 Lecture 50 OOP Challenge
  * The purpose of the application is to help a ficticious company called Bills Burgers to manage
  * their process of selling hamburgers.
  * Our application will help Bill to select types of burgers, some of the additional items (additions) to
