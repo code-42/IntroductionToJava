@@ -9,5 +9,5 @@ public class DeluxeBurger extends Hamburger {
         this.chipsAndDrinks = chipsAndDrinks;
     }
 
-    
+
 }
