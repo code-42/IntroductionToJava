@@ -42,7 +42,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Hamburger basicBurger = new Hamburger("Basic Burger", "ham", "wheat", 5.00);
+        Hamburger basicBurger = new Hamburger("ham", "wheat", 5.00);
         System.out.println(basicBurger.getOrder());
 
     }

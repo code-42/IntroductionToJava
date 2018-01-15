@@ -7,8 +7,8 @@ public class Hamburger {
     private String bread;
     private double price;
 
-    public Hamburger(String name, String meat, String bread, double price) {
-        this.name = name;
+    // The constructor should only include the roll type, meat and price.
+    public Hamburger(String meat, String bread, double price) {
         this.meat = meat;
         this.bread = bread;
         this.price = price;
@@ -31,8 +31,7 @@ public class Hamburger {
     }
 
     public String getOrder(){
-        String order =  this.getName() + " " +
-                        this.getMeat() + " " +
+        String order =  this.getMeat() + " " +
                         this.getBread() + " " +
                         this.getPrice();
         return order;
