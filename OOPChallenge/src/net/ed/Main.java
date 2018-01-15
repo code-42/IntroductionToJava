@@ -45,5 +45,10 @@ public class Main {
         Hamburger basicBurger = new Hamburger("ham", "wheat", 5.00);
         System.out.println(basicBurger.getOrder());
 
+        basicBurger.addItem(new AdditionalItem("cheeze", .75));
+        basicBurger.addItem(new AdditionalItem("bacon", 1.75));
+        basicBurger.addItem(new AdditionalItem("mushrooms", .75));
+
+
     }
 }

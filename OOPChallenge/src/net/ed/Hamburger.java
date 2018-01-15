@@ -9,14 +9,17 @@ public class Hamburger {
     private String meat;
     private String bread;
     private double price;
-
-    List<String> additionalItems = new ArrayList<String>();
+    private List<AdditionalItem> item = new ArrayList<AdditionalItem>();
 
     // The constructor should only include the roll type, meat and price.
     public Hamburger(String meat, String bread, double price) {
         this.meat = meat;
         this.bread = bread;
         this.price = price;
+    }
+
+    // Default constructor
+    public Hamburger() {
     }
 
     public String getName() {
@@ -35,9 +38,9 @@ public class Hamburger {
         return price;
     }
 
-    public void addItems(String item, double price){
-        this.additionalItems.add(item);
-        this.price += price;
+    public void addItem(AdditionalItem item){
+        this.item.add(item);
+//        this.price += price;
 
     }
 

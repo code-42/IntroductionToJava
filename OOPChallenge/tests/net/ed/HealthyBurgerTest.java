@@ -7,9 +7,7 @@ import static org.junit.Assert.*;
 public class HealthyBurgerTest extends Hamburger{
 
     @Test
-    public void addItems() {
-        String expected = hamburger.addItems();
-        String actual = hamburger.addItems();
-        assertEquals(expected, actual);
+    public void addItem() {
+        String expected = "Cheese";
     }
 }

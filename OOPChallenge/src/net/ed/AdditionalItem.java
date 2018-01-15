@@ -1,0 +1,20 @@
+package net.ed;
+
+public class AdditionalItem {
+
+    private String item;
+    private double price;
+
+    public AdditionalItem(String item, double price) {
+        this.item = item;
+        this.price = price;
+    }
+
+    public String getItem() {
+        return item;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+}
