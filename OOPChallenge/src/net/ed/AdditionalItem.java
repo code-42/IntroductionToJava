@@ -17,4 +17,9 @@ public class AdditionalItem {
     public double getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "\n" + item + ", additional $" + price;
+    }
 }
