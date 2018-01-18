@@ -8,6 +8,5 @@ public class HamburgerTest {
 
     @Test
     public void Hamburger() {
-        System.out.println(getClass());
     }
 }

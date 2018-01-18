@@ -13,4 +13,30 @@ public class Hamburger {
         this.bread = bread;
         this.price = price;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMeat() {
+        return meat;
+    }
+
+    public String getBread() {
+        return bread;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Hamburger{" +
+                "name='" + name + '\'' +
+                ", meat='" + meat + '\'' +
+                ", bread='" + bread + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
