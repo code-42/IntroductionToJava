@@ -23,6 +23,12 @@ public class HamburgerTest {
         expected = "Regular white bun";
         actual = basicBurger.getBread();
         assertEquals(expected, actual);
+
+
+        double expectedPrice, actualPrice;
+        expectedPrice = 5.55;
+        actualPrice = basicBurger.getPrice();
+        assertEquals(expectedPrice, actualPrice, 0);
     }
 
 
