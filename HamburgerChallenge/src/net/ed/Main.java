@@ -41,5 +41,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        Hamburger basicBurger = new Hamburger("Basic Burger", "ham", "Regular white bun", 5.55);
+        System.out.println("Here's your Basic Burger. Price is " + basicBurger.toString());
     }
 }
