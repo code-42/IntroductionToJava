@@ -56,16 +56,4 @@ public class Hamburger {
 
         return order;
     }
-
-//    @Override
-//    public String toString() {
-//        return "Hamburger{" +
-//                "name='" + name + '\'' +
-//                ", meat='" + meat + '\'' +
-//                ", bread='" + bread + '\'' +
-//                ", price=" + price +
-//                ", item=" + item +
-//                ", items=" + items +
-//                '}';
-//    }
 }
