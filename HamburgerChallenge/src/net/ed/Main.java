@@ -41,5 +41,8 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+        Hamburger basicBurger = new Hamburger("Bill's Basic Burger", "ham", "Regular boring white bun", 5.55);
+
     }
 }

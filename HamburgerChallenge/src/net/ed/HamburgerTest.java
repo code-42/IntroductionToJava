@@ -1,22 +1,40 @@
 package net.ed;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class HamburgerTest {
 
-    @org.junit.Test
+    @Test
     public void getName() {
     }
 
-    @org.junit.Test
+    @Test
     public void getMeat() {
     }
 
-    @org.junit.Test
+    @Test
     public void getBread() {
     }
 
-    @org.junit.Test
+    @Test
     public void getPrice() {
+    }
+
+    @Test
+    public void addHamburgerAddition1() {
+    }
+
+    @Test
+    public void addHamburgerAddition2() {
+    }
+
+    @Test
+    public void addHamburgerAddition3() {
+    }
+
+    @Test
+    public void addHamburgerAddition4() {
     }
 }
