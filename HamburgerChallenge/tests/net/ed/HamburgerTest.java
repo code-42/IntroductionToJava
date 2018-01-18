@@ -16,8 +16,12 @@ public class HamburgerTest {
         actual = basicBurger.getName();
         assertEquals(expected, actual);
 
-        expected = "hamm";
+        expected = "ham";
         actual = basicBurger.getMeat();
+        assertEquals(expected, actual);
+
+        expected = "Regular white bun";
+        actual = basicBurger.getBread();
         assertEquals(expected, actual);
     }
 
