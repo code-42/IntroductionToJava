@@ -8,10 +8,18 @@ public class HamburgerTest {
 
     Hamburger basicBurger = new Hamburger("Basic Burger", "ham", "Regular white bun", 5.55);
 
+    String expected, actual;
+
     @Test
     public void Hamburger() {
-        String expected = "Basic Burger";
-        String actual = basicBurger.getName();
+        expected = "Basic Burger";
+        actual = basicBurger.getName();
+        assertEquals(expected, actual);
+
+        expected = "hamm";
+        actual = basicBurger.getMeat();
         assertEquals(expected, actual);
     }
+
+
 }
