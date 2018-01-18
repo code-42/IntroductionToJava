@@ -71,4 +71,69 @@ public class Hamburger {
         this.additionalItem4Price = price;
     }
 
+
+    public double itemizeHamburger() {
+        double hamburgerPrice = this.price;
+        System.out.println(this.name + " on a " +
+                this.bread + ", price is "  +
+                this.price);
+
+        if(this.additionalItem1Name != null) {
+            hamburgerPrice += this.additionalItem1Price;
+            System.out.println("Added " + this.additionalItem1Name +
+                    " for an extra " + this.additionalItem1Price);
+        }
+
+        if(this.additionalItem2Name != null) {
+            hamburgerPrice += this.additionalItem2Price;
+            System.out.println("Added " + this.additionalItem2Name +
+                    " for an extra " + this.additionalItem2Price);
+        }
+
+        if(this.additionalItem3Name != null) {
+            hamburgerPrice += this.additionalItem3Price;
+            System.out.println("Added " + this.additionalItem3Name +
+                    " for an extra " + this.additionalItem3Price);
+        }
+
+        if(this.additionalItem4Name != null) {
+            hamburgerPrice += this.additionalItem4Price;
+            System.out.println("Added " + this.additionalItem4Name +
+                    " for an extra " + this.additionalItem4Price);
+        }
+
+        return hamburgerPrice;
+    }
+
+    public String getAdditionalItem1Name() {
+        return additionalItem1Name;
+    }
+
+    public double getAdditionalItem1Price() {
+        return additionalItem1Price;
+    }
+
+    public String getAdditionalItem2Name() {
+        return additionalItem2Name;
+    }
+
+    public double getAdditionalItem2Price() {
+        return additionalItem2Price;
+    }
+
+    public String getAdditionalItem3Name() {
+        return additionalItem3Name;
+    }
+
+    public double getAdditionalItem3Price() {
+        return additionalItem3Price;
+    }
+
+    public String getAdditionalItem4Name() {
+        return additionalItem4Name;
+    }
+
+    public double getAdditionalItem4Price() {
+        return additionalItem4Price;
+    }
 }

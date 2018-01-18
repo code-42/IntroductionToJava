@@ -42,7 +42,14 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Hamburger basicBurger = new Hamburger("Bill's Basic Burger", "ham", "Regular boring white bun", 5.55);
+        Hamburger basicBurger = new Hamburger("Bill's Basic Burger", "ham", "Regular boring white bun", 5);
+
+        basicBurger.addHamburgerAddition1("Bacon", 1.25);
+        basicBurger.addHamburgerAddition2("Cheeze", .25);
+//        basicBurger.addHamburgerAddition3("Lettuce", .25);
+//        basicBurger.addHamburgerAddition4("Tomato", .25);
+
+        System.out.println("Total price is " + basicBurger.itemizeHamburger());
 
     }
 }
