@@ -12,6 +12,7 @@ public class HamburgerTest {
     public void getOrder() {
         String expected = "Bill's Basic Burger ham wheat 5.0";
         String actual = basicBurger.getOrder();
+        System.out.println(actual);
         assertEquals(expected, actual);
     }
 }

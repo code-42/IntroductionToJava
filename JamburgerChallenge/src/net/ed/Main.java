@@ -50,6 +50,19 @@ public class Main {
 
         System.out.println(basicBurger.getOrder() + "\nTotal price is $" +
         basicBurger.getTotal());
+        System.out.println();
+
+        HealthyBurger healthyBurger = new HealthyBurger("Healthy Burger", 5.00);
+        healthyBurger.addItem(new AdditionalItem("cheeze", .25));
+        healthyBurger.addItem(new AdditionalItem("bacon", 1.00));
+        healthyBurger.addItem(new AdditionalItem("mushrooms", .25));
+        healthyBurger.addItem(new AdditionalItem("Mustard", .25));
+        healthyBurger.addItem(new AdditionalItem("Mushrooms", 1.00));
+
+        System.out.println(healthyBurger.getOrder() + "\nTotal price is $" +
+        healthyBurger.getTotal());
+
+        System.out.println("Total Healthy Burger price is  " + healthyBurger.getTotal());
 
     }
 }
