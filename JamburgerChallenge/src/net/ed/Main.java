@@ -42,13 +42,14 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Hamburger basicBurger = new Hamburger("ham", "wheat", 5.00);
+        Hamburger basicBurger = new Hamburger("Bill's Basic", "ham", "wheat", 5.00);
 
-        basicBurger.addItem(new AdditionalItem("cheeze", .75));
-        basicBurger.addItem(new AdditionalItem("bacon", 1.75));
-        basicBurger.addItem(new AdditionalItem("mushrooms", .75));
+        basicBurger.addItem(new AdditionalItem("cheeze", .25));
+        basicBurger.addItem(new AdditionalItem("bacon", 1.00));
+        basicBurger.addItem(new AdditionalItem("mushrooms", .25));
 
-        System.out.println(basicBurger.getOrder());
+        System.out.println(basicBurger.getOrder() + "\nTotal price is $" +
+        basicBurger.getTotal());
 
     }
 }

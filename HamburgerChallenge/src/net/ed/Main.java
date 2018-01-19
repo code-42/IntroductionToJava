@@ -51,5 +51,9 @@ public class Main {
 
         System.out.println("Total price is " + basicBurger.itemizeHamburger());
 
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        healthyBurger.addHamburgerAddition1("Mustard", .25);
+        healthyBurger.addHealthyAddition1("Mushrooms", 1.00);
+        System.out.println("Total Healthy Burger price is  " + healthyBurger.itemizeHamburger());
     }
 }

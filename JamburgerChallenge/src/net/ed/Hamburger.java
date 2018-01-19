@@ -14,7 +14,8 @@ public class Hamburger {
     protected ArrayList<AdditionalItem> items = new ArrayList<AdditionalItem>();
 
     // The constructor should only include the roll type, meat and price.
-    public Hamburger(String meat, String bread, double price) {
+    public Hamburger(String name, String meat, String bread, double price) {
+        this.name = name;
         this.meat = meat;
         this.bread = bread;
         this.price = price;
@@ -46,7 +47,8 @@ public class Hamburger {
     }
 
     public String getOrder(){
-        String order =  this.getMeat() + " " +
+        String order =  this.getName() + " " +
+                        this.getMeat() + " " +
                         this.getBread() + " " +
                         this.getPrice();
 
@@ -55,5 +57,15 @@ public class Hamburger {
         }
 
         return order;
+    }
+
+    public double getTotal(){
+        double orderTotal = this.getPrice();
+
+        for (int i = 0; i < items.size(); i++) {
+            orderTotal += this.items.get(i).getPrice();
+        }
+
+        return orderTotal;
     }
 }
