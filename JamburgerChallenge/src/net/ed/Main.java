@@ -42,9 +42,11 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
+        double cheezePrice = .25;
+
         Hamburger basicBurger = new Hamburger("Bill's Basic", "ham", "wheat", 5.00);
 
-        basicBurger.addItem(new AdditionalItem("cheeze", .25));
+        basicBurger.addItem(new AdditionalItem("cheeze", cheezePrice));
         basicBurger.addItem(new AdditionalItem("bacon", 1.00));
         basicBurger.addItem(new AdditionalItem("mushrooms", .25));
 
@@ -58,11 +60,15 @@ public class Main {
         healthyBurger.addItem(new AdditionalItem("mushrooms", .25));
         healthyBurger.addItem(new AdditionalItem("Mustard", .25));
         healthyBurger.addItem(new AdditionalItem("Mushrooms", 1.00));
-
-        System.out.println(healthyBurger.getOrder() + "\nTotal price is $" +
-        healthyBurger.getTotal());
-
         System.out.println("Total Healthy Burger price is  " + healthyBurger.getTotal());
+
+        DeluxeBurger deluxeBurger = new DeluxeBurger("Deluxe Burger", "ham", "wheat", 5.00);
+        deluxeBurger.addItem(new AdditionalItem("cheeze", .25));
+        deluxeBurger.addItem(new AdditionalItem("bacon", 1.00));
+        deluxeBurger.addItem(new AdditionalItem("mushrooms", .25));
+        deluxeBurger.addItem(new AdditionalItem("Mustard", .25));
+        deluxeBurger.addItem(new AdditionalItem("Mushrooms", 1.00));
+        System.out.println("Total Deluxe Burger price is  " + healthyBurger.getTotal());
 
     }
 }

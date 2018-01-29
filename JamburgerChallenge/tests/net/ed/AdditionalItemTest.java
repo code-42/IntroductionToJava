@@ -11,13 +11,11 @@ public class AdditionalItemTest {
     @Test
     public void getItem() {
         basicBurger.addItem(new AdditionalItem("cheeze", .75));
-        basicBurger.addItem(new AdditionalItem("bacon", 1.75));
-        basicBurger.addItem(new AdditionalItem("mushrooms", .75));
+//        basicBurger.addItem(new AdditionalItem("bacon", 1.75));
+//        basicBurger.addItem(new AdditionalItem("mushrooms", .75));
 
-//        System.out.println(basicBurger.getOrder());
-
-        String expected = "";
-        String actual = "";
+        String expected = "cheeze";
+        String actual = basicBurger.getOrder();
         assertEquals(expected, actual);
     }
 
