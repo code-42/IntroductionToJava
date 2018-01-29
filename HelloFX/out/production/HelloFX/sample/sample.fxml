@@ -9,9 +9,21 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
 <GridPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.Controller"
-            alignment="center" hgap="10">
+          fx:controller="sample.Controller"
+          alignment="center" hgap="10" vgap="10"
+          gridLinesVisible="true">
 
     <Button text="OK" GridPane.rowIndex="0" GridPane.columnIndex="0">
         <graphic>
@@ -20,7 +32,11 @@
             </ImageView>
         </graphic>
     </Button>
-    <Label text="This is a label" GridPane.rowIndex="0" GridPane.columnIndex="1">
+    <Label text="This is a label" GridPane.rowIndex="0" GridPane.columnIndex="1"
+        textFill="blue">
+        <font>
+            <Font name="Courier New bold" size="14"/>
+        </font>
         <graphic>
             <ImageView>
                 <Image url="@/toolbarButtonGraphics/general/Information24.gif"/>
@@ -28,5 +44,49 @@
         </graphic>
     </Label>
 
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup"/>
+    </fx:define>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Red" toggleGroup="$colorToggleGroup"/>
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="2" text="Green" toggleGroup="$colorToggleGroup" selected="true"/>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="2" text="Blue" toggleGroup="$colorToggleGroup"/>
 
+    <VBox GridPane.rowIndex="3" GridPane.columnIndex="0" spacing="5">
+
+        <CheckBox text="Dog"/>
+        <CheckBox text="Cat"/>
+        <CheckBox text="Bird"/>
+
+    </VBox>
+
+    <!--<HBox GridPane.columnIndex="0" GridPane.rowIndex="4" spacing="10">-->
+
+        <ToggleButton text="Toggle Me" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <ToggleButton text="Toggle Me" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+    <!--</HBox>-->
+
+    <Label text="email address" GridPane.rowIndex="4" GridPane.columnIndex="0"
+           textFill="blue"/>
+
+    <TextField GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+
+    <Label text="Password" GridPane.rowIndex="4" GridPane.columnIndex="1"
+           textFill="blue"/>
+    <PasswordField GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <ComboBox GridPane.rowIndex="5" GridPane.columnIndex="2">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Option 1"/>
+                <String fx:value="Option 2"/>
+                <String fx:value="Option 3"/>
+                <String fx:value="Option 4"/>
+                <String fx:value="Option 5"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Select"/>
+        </value>
+    </ComboBox>
 </GridPane>
