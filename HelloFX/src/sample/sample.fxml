@@ -20,19 +20,33 @@
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
 
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.TilePane?>
+
 <GridPane xmlns:fx="http://javafx.com/fxml"
           fx:controller="sample.Controller"
           alignment="center" hgap="10" vgap="10"
           gridLinesVisible="true">
+<HBox GridPane.rowIndex="0" GridPane.columnIndex="0"
+       GridPane.columnSpan="3" alignment="CENTER">
 
-    <Button text="OK" GridPane.rowIndex="0" GridPane.columnIndex="0">
+    <Label text="Hello JavaFX!" textFill="blue">
+        <font>
+            <Font name="Arial bold" size="48"/>
+        </font>
+    </Label>
+</HBox>
+    <Button text="OK" GridPane.rowIndex="1" GridPane.columnIndex="0">
         <graphic>
             <ImageView>
                 <Image url="@/toolbarButtonGraphics/general/TipOfTheDay24.gif"/>
             </ImageView>
         </graphic>
     </Button>
-    <Label text="This is a label" GridPane.rowIndex="0" GridPane.columnIndex="1"
+    <Label text="This is a label" GridPane.rowIndex="1" GridPane.columnIndex="1"
         textFill="blue">
         <font>
             <Font name="Courier New bold" size="14"/>
@@ -47,9 +61,9 @@
     <fx:define>
         <ToggleGroup fx:id="colorToggleGroup"/>
     </fx:define>
-    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Red" toggleGroup="$colorToggleGroup"/>
-    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="2" text="Green" toggleGroup="$colorToggleGroup" selected="true"/>
-    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="2" text="Blue" toggleGroup="$colorToggleGroup"/>
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="2" text="Red" toggleGroup="$colorToggleGroup"/>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="2" text="Green" toggleGroup="$colorToggleGroup" selected="true"/>
+    <RadioButton GridPane.rowIndex="3" GridPane.columnIndex="2" text="Blue" toggleGroup="$colorToggleGroup"/>
 
     <VBox GridPane.rowIndex="3" GridPane.columnIndex="0" spacing="5">
 
@@ -59,12 +73,10 @@
 
     </VBox>
 
-    <!--<HBox GridPane.columnIndex="0" GridPane.rowIndex="4" spacing="10">-->
 
-        <ToggleButton text="Toggle Me" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-        <ToggleButton text="Toggle Me" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <ToggleButton text="Toggle Me" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <ToggleButton text="Toggle Me" GridPane.rowIndex="2" GridPane.columnIndex="1" />
 
-    <!--</HBox>-->
 
     <Label text="email address" GridPane.rowIndex="4" GridPane.columnIndex="0"
            textFill="blue"/>
@@ -89,4 +101,15 @@
             <String fx:value="Select"/>
         </value>
     </ComboBox>
+    <Slider GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="4"
+            min="0" max="100" showTickLabels="true" showTickMarks="true"
+            minorTickCount="4" snapToTicks="true"/>
+
+    <Spinner GridPane.columnIndex="1" GridPane.rowIndex="3" min="0" max="100"
+            editable="true" initialValue="50"/>
+
+    <ColorPicker GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+
+    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
 </GridPane>
