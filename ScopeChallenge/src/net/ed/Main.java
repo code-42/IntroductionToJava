@@ -28,10 +28,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a number:");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please enter a number:");
 
-        X x = new X(scanner.nextInt());
+        X x = new X(new Scanner(System.in));
         x.x();
     }
 }

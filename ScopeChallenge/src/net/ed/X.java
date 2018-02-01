@@ -10,8 +10,9 @@ public class X {
      * constructor
      * @param x
      */
-    public X(int x) {
-        this.x = x;
+    public X(Scanner x) {
+        System.out.println("Please enter a number:");
+        this.x = x.nextInt();
     }
 
     /**
