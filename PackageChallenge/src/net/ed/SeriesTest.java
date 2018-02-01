@@ -18,4 +18,12 @@ public class SeriesTest {
         long actual = Series.nSum(3);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void factorial() {
+        // factorial(int n) : long
+        long expected = 5;
+        long actual = Series.factorial(3);
+        assertEquals(expected, actual);
+    }
 }
