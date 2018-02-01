@@ -5,6 +5,7 @@ package net.ed;
  * Section 12 Lecture 91 Pachage Challenge
  * Create a suitably named package containing a class called Series
  * with the following static methods:
+ *
  * nSum(int n) returns the sum of all numbers from 0 to n. The first 10 numbers are:
  * 0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55.
  *
@@ -37,14 +38,14 @@ public class Main {
             System.out.println(Series.nSum(i));
         }
 
-        System.out.println("*****************************");
-        for(int i=0; i<=10; i++) {
-            System.out.println(Series.factorial(i));
-        }
-        System.out.println("*****************************");
-        for(int i=0; i<=10; i++) {
-            System.out.println(Series.fibonacci(i));
-        }
+//        System.out.println("*****************************");
+//        for(int i=0; i<=10; i++) {
+//            System.out.println(Series.factorial(i));
+//        }
+//        System.out.println("*****************************");
+//        for(int i=0; i<=10; i++) {
+//            System.out.println(Series.fibonacci(i));
+//        }
 
 
     }
