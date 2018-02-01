@@ -1,5 +1,18 @@
 package net.ed;
 
+/**
+ * Section 13 Lecture 106 Adventure Game Challenge
+ *
+ * Change the program to allow players to type full words, or phrases, then move to the
+ * correct location based upon their input.
+ * The player should be able to type commands such as "Go West", "run South", or just "East"
+ * and the program will move to the appropriate location if there is one.  As at present, an
+ * attempt to move in an invalid direction should print a message and remain in the same place.
+ *
+ * Single letter commands (N, W, S, E, Q) should still be available.
+ *
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -38,6 +51,22 @@ public class Main {
             locations.get(1).addExit("E", 3);
             locations.get(1).addExit("S", 4);
             locations.get(1).addExit("N", 5);
+//        locations.get(1).addExit("Q", 0);
+
+            locations.get(2).addExit("N", 5);
+//        locations.get(2).addExit("Q", 0);
+
+            locations.get(3).addExit("W", 1);
+//        locations.get(3).addExit("Q", 0);
+
+            locations.get(4).addExit("N", 1);
+            locations.get(4).addExit("W", 2);
+//        locations.get(4).addExit("Q", 0);
+
+            locations.get(5).addExit("S", 1);
+            locations.get(5).addExit("W", 2);
+//        locations.get(5).addExit("Q", 0);
+
         }
 
 //    }
