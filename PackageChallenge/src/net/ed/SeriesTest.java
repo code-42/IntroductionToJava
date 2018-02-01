@@ -13,7 +13,7 @@ public class SeriesTest {
 
     @Test
     public void nSum() {
-        // return (n * (n + 1)) /2;
+        // long nSum(int n)
         long expected = 6;
         long actual = Series.nSum(3);
         assertEquals(expected, actual);
@@ -21,9 +21,17 @@ public class SeriesTest {
 
     @Test
     public void factorial() {
-        // factorial(int n) : long
+        // long factorial(int n)
         long expected = 5;
         long actual = Series.factorial(3);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void fibonacci() {
+        // long fibonacci(int n)
+        long expected = 6;
+        long actual = Series.fibonacci(5);
         assertEquals(expected, actual);
     }
 }

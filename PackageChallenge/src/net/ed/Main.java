@@ -35,18 +35,18 @@ public class Main {
     public static void main(String[] args) {
 
         for(int i=0; i <=10; i++) {
-            System.out.println(Series.nSum(i));
+            System.out.println("nSum(" + i + ") == " + Series.nSum(i));
         }
 
-//        System.out.println("*****************************");
+        System.out.println("\n*****************************\n");
         for(int i=0; i<=10; i++) {
-            System.out.println(Series.factorial(i));
+            System.out.println("factorial(" + i + ") == " + Series.factorial(i));
         }
 
-//        System.out.println("*****************************");
-//        for(int i=0; i<=10; i++) {
-//            System.out.println(Series.fibonacci(i));
-//        }
+        System.out.println("\n*****************************\n");
+        for(int i=0; i<=10; i++) {
+            System.out.println("fibonacci(" + i + ") == " + Series.fibonacci(i));
+        }
 
 
     }
