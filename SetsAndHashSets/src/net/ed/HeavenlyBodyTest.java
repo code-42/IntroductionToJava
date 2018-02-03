@@ -14,7 +14,13 @@ public class HeavenlyBodyTest {
 
     @org.junit.Test
     public void getName() {
-        fail("this test not implemented yet");
+        HeavenlyBody temp = new HeavenlyBody("Mercury", 88);
+        solarSystem.put(temp.getName(), temp);
+        planets.add(temp);
+
+        String expected = "Mercury";
+        String actual = temp.getName();
+        assertEquals(expected, actual);
     }
 
     @org.junit.Test
