@@ -1,5 +1,6 @@
 package net.ed;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class HeavenlyBody {
