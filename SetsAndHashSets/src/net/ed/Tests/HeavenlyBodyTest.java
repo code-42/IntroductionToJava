@@ -1,4 +1,6 @@
-package net.ed;
+package net.ed.Tests;
+
+import net.ed.HeavenlyBody;
 
 import java.util.HashMap;
 import java.util.HashSet;
